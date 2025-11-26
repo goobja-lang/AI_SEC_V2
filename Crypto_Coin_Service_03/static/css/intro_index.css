@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0 1rem;
+}
+h1 {
+  text-align: center;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: rgb(39, 194, 173);
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+}
+
+#main_intro {
+  background-image: url("../img/main_intro.jpg");
+  height: calc(100vh - 5.8rem);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content a {
+  padding-left: calc(50vw - 15rem);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.content a:hover {
+  color: rgb(39, 194, 173);
+  font-weight: bold;
+}
+.content {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+#mychar {
+  position: fixed;
+  bottom: 5rem;
+  transform: scaleX(-1);
+  animation: move 20s ease-in-out infinite;
+}
+@keyframes move {
+  0% {
+    left: 1rem;
+    transform: scaleX(-1);
+  }
+  45% {
+    left: calc(100vw - 5rem);
+    transform: scaleX(-1);
+  }
+  55% {
+    left: calc(100vw - 3rem);
+    transform: scaleX(1);
+  }
+  100% {
+    left: 1rem;
+    transform: scaleX(1);
+  }
+}
